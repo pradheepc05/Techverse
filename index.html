@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>TECHVERSE 2026 | Event Structure</title>
+
 <style>
 :root{
   --navy:#111827;
@@ -14,7 +15,9 @@
   --white:#ffffff;
   --text:#1e293b;
 }
+
 *{box-sizing:border-box}
+
 body{
   margin:0;
   font-family:Inter,Segoe UI,Arial,sans-serif;
@@ -22,318 +25,1213 @@ body{
   background:#eef2f7;
   line-height:1.65;
 }
-.container{max-width:1100px;margin:auto;padding:28px 20px 60px}
+
+.container{
+  max-width:1100px;
+  margin:auto;
+  padding:28px 20px 60px;
+}
 
 .hero{
   background:linear-gradient(135deg,#111827,#1e3a8a);
-  color:white;border-radius:24px;padding:56px 42px;
-  margin-bottom:28px;position:relative;overflow:hidden;
+  color:white;
+  border-radius:24px;
+  padding:56px 42px;
+  margin-bottom:28px;
+  position:relative;
+  overflow:hidden;
 }
+
 .hero:after{
-  content:"";position:absolute;width:260px;height:260px;
-  border:1px solid rgba(255,255,255,.15);border-radius:50%;
-  right:-70px;top:-90px;
+  content:"";
+  position:absolute;
+  width:260px;
+  height:260px;
+  border:1px solid rgba(255,255,255,.15);
+  border-radius:50%;
+  right:-70px;
+  top:-90px;
 }
+
 .badge{
-  display:inline-block;border:1px solid rgba(255,255,255,.3);
-  padding:6px 13px;border-radius:999px;font-size:13px;
-  letter-spacing:.08em;text-transform:uppercase;
+  display:inline-block;
+  border:1px solid rgba(255,255,255,.3);
+  padding:6px 13px;
+  border-radius:999px;
+  font-size:13px;
+  letter-spacing:.08em;
+  text-transform:uppercase;
 }
-h1{font-size:clamp(42px,7vw,76px);margin:14px 0 0;letter-spacing:-.04em}
-.hero h2{font-weight:500;margin:0 0 22px;font-size:20px}
-.theme{font-size:14px;letter-spacing:.22em;font-weight:700}
+
+h1{
+  font-size:clamp(42px,7vw,76px);
+  margin:14px 0 0;
+  letter-spacing:-.04em;
+}
+
+.hero h2{
+  font-weight:500;
+  margin:0 0 22px;
+  font-size:20px;
+}
+
+.theme{
+  font-size:14px;
+  letter-spacing:.22em;
+  font-weight:700;
+}
 
 .meta{
-  display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:30px
-}
-.meta div{
-  background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.15);
-  padding:14px;border-radius:12px;font-size:14px
-}
-.meta strong{display:block;font-size:11px;text-transform:uppercase;opacity:.7;margin-bottom:3px}
-section,.card{
-  background:var(--white);border:1px solid var(--border);
-  border-radius:18px;padding:30px;margin-bottom:22px;
-  box-shadow:0 8px 25px rgba(15,23,42,.04)
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:12px;
+  margin-top:30px;
 }
 
-.section-title{display:flex;align-items:center;gap:12px;margin:0 0 20px;color:var(--navy)}
-.num{
-  width:34px;height:34px;border-radius:10px;background:#dbeafe;color:#1d4ed8;
-  display:grid;place-items:center;font-weight:800;font-size:14px
+.meta div{
+  background:rgba(255,255,255,.1);
+  border:1px solid rgba(255,255,255,.15);
+  padding:14px;
+  border-radius:12px;
+  font-size:14px;
 }
-h2{font-size:25px} h3{color:var(--navy);margin-top:26px}
-p{margin:8px 0 14px}.muted{color:var(--slate)}
+
+.meta strong{
+  display:block;
+  font-size:11px;
+  text-transform:uppercase;
+  opacity:.7;
+  margin-bottom:3px;
+}
+
+section,.card{
+  background:var(--white);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:30px;
+  margin-bottom:22px;
+  box-shadow:0 8px 25px rgba(15,23,42,.04);
+}
+
+.section-title{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin:0 0 20px;
+  color:var(--navy);
+}
+
+.num{
+  width:34px;
+  height:34px;
+  border-radius:10px;
+  background:#dbeafe;
+  color:#1d4ed8;
+  display:grid;
+  place-items:center;
+  font-weight:800;
+  font-size:14px;
+}
+
+h2{font-size:25px}
+
+h3{
+  color:var(--navy);
+  margin-top:26px;
+}
+
+p{margin:8px 0 14px}
+
+.muted{color:var(--slate)}
+
 ul{padding-left:22px}
-.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:18px;
+}
 
 .competition{
-  border:1px solid var(--border);border-radius:16px;padding:22px;
-  background:#fbfdff
-}
-.competition h3{margin:0 0 4px;font-size:20px}
-.tagline{color:var(--blue);font-weight:700;font-size:13px}
-.flow{
-  display:flex;flex-wrap:wrap;gap:8px;margin:14px 0
-}
-.flow span{
-  background:#eff6ff;border:1px solid #bfdbfe;color:#1e40af;
-  padding:7px 10px;border-radius:8px;font-size:13px;font-weight:600
+  border:1px solid var(--border);
+  border-radius:16px;
+  padding:22px;
+  background:#fbfdff;
 }
 
-table{width:100%;border-collapse:collapse;margin:14px 0}
-th,td{text-align:left;padding:12px 13px;border-bottom:1px solid var(--border)}
-th{background:#f8fafc;color:var(--navy);font-size:13px}
-td{font-size:14px}
-.total td{font-weight:800;background:#f8fafc}
-.schedule td:first-child{font-weight:700;white-space:nowrap;color:#1d4ed8}
-.highlight{
-  background:#eff6ff;border-left:4px solid var(--blue);
-  padding:16px 18px;border-radius:8px;margin:16px 0
+.competition h3{
+  margin:0 0 4px;
+  font-size:20px;
 }
+
+.tagline{
+  color:var(--blue);
+  font-weight:700;
+  font-size:13px;
+}
+
+.flow{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin:14px 0;
+}
+
+.flow span{
+  background:#eff6ff;
+  border:1px solid #bfdbfe;
+  color:#1e40af;
+  padding:7px 10px;
+  border-radius:8px;
+  font-size:13px;
+  font-weight:600;
+}
+
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin:14px 0;
+}
+
+th,td{
+  text-align:left;
+  padding:12px 13px;
+  border-bottom:1px solid var(--border);
+}
+
+th{
+  background:#f8fafc;
+  color:var(--navy);
+  font-size:13px;
+}
+
+td{font-size:14px}
+
+.total td{
+  font-weight:800;
+  background:#f8fafc;
+}
+
+.schedule td:first-child{
+  font-weight:700;
+  white-space:nowrap;
+  color:#1d4ed8;
+}
+
+.highlight{
+  background:#eff6ff;
+  border-left:4px solid var(--blue);
+  padding:16px 18px;
+  border-radius:8px;
+  margin:16px 0;
+}
+
 .rules li{margin:8px 0}
 
 .resp{
-  display:grid;grid-template-columns:repeat(2,1fr);gap:12px
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:12px;
 }
+
 .resp div{
-  padding:15px;border:1px solid var(--border);border-radius:12px;background:#fafafa
+  padding:15px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:#fafafa;
 }
-.resp strong{display:block;color:var(--navy)}
+
+.resp strong{
+  display:block;
+  color:var(--navy);
+}
+
 .footer{
-  text-align:center;color:#64748b;padding:20px;font-size:13px
+  text-align:center;
+  color:#64748b;
+  padding:20px;
+  font-size:13px;
 }
+
 @media(max-width:900px){
-  .meta{grid-template-columns:repeat(2,1fr)}
+  .meta{
+    grid-template-columns:repeat(2,1fr);
+  }
 }
+
 @media(max-width:760px){
-  .hero{padding:38px 24px}.meta,.grid,.resp{grid-template-columns:1fr}
-  section{padding:22px 18px}.schedule{font-size:13px}
-  .schedule td:first-child{white-space:normal}
+  .hero{
+    padding:38px 24px;
+  }
+
+  .meta,.grid,.resp{
+    grid-template-columns:1fr;
+  }
+
+  section{
+    padding:22px 18px;
+  }
+
+  .schedule{
+    font-size:13px;
+  }
+
+  .schedule td:first-child{
+    white-space:normal;
+  }
 }
+
 @media print{
-  body{background:white}.container{max-width:none;padding:0}
-  .hero{border-radius:0;break-after:avoid}
-  section,.card{box-shadow:none;break-inside:avoid}
+  body{background:white}
+
+  .container{
+    max-width:none;
+    padding:0;
+  }
+
+  .hero{
+    border-radius:0;
+    break-after:avoid;
+  }
+
+  section,.card{
+    box-shadow:none;
+    break-inside:avoid;
+  }
 }
 </style>
 </head>
+
 <body>
+
 <div class="container">
 
 <header class="hero">
-  <span class="badge">Official Event Structure</span>
-  <h1>TECHVERSE 2026</h1>
-  <h2>Explore • Create • Innovate</h2>
-  <div class="theme">A ONE-DAY TECHNOLOGY &amp; INNOVATION COMPETITION</div>
-  <div style="margin-top:12px;font-size:15px;font-weight:700;letter-spacing:.08em;">IN-CAMPUS COMPETITION</div>
-  <div class="meta">
-    <div><strong>Organized By</strong>Department of Computer and Information Science</div>
-    <div><strong>Event Date</strong>30 September 2026</div>
-    <div><strong>Time</strong>9:00 AM – 4:30 PM</div>
-    <div><strong>Venue</strong>Department of Computer and Information Science</div>
-    <div><strong>Registration Closes</strong>25 September 2026</div>
-  </div>
+
+<span class="badge">Official Event Structure</span>
+
+<h1>TECHVERSE 2026</h1>
+
+<h2>Explore • Create • Innovate</h2>
+
+<div class="theme">
+A ONE-DAY TECHNOLOGY &amp; INNOVATION COMPETITION
+</div>
+
+<div style="margin-top:12px;font-size:15px;font-weight:700;letter-spacing:.08em;">
+IN-CAMPUS COMPETITION
+</div>
+
+<div class="meta">
+
+<div>
+<strong>Organized By</strong>
+Department of Computer and Information Science
+</div>
+
+<div>
+<strong>Event Date</strong>
+30 September 2026
+</div>
+
+<div>
+<strong>Time</strong>
+9:00 AM – 4:30 PM
+</div>
+
+<div>
+<strong>Venue</strong>
+Department of Computer and Information Science
+</div>
+
+<div>
+<strong>Registration Closes</strong>
+25 September 2026
+</div>
+
+</div>
 </header>
 
-<section>
-  <h2 class="section-title"><span class="num">01</span> About the Event</h2>
-  <p><strong>TECHVERSE 2026</strong> is a one-day technology and innovation competition organized by the Department of Computer and Information Science.</p>
-  <p class="muted">The event provides students with opportunities to develop technical skills, explore Generative AI, demonstrate practical projects, express creativity, improve communication skills, and learn about current technology trends.</p>
-  <div class="highlight"><strong>EXPLORE</strong> → TechNova + TechTalkX &nbsp; | &nbsp; <strong>CREATE</strong> → PromptX + AI CineVerse &nbsp; | &nbsp; <strong>INNOVATE</strong> → ProjectX Live</div>
-</section>
 
 <section>
-  <h2 class="section-title"><span class="num">02</span> Objectives</h2>
-  <ul>
-    <li>Encourage practical and hands-on technology learning.</li>
-    <li>Improve programming, debugging, and logical thinking skills.</li>
-    <li>Introduce students to Generative AI and Prompt Engineering.</li>
-    <li>Encourage creativity through AI-based media production.</li>
-    <li>Provide a platform to demonstrate working projects.</li>
-    <li>Develop communication and technical presentation skills.</li>
-    <li>Encourage innovation and problem-solving.</li>
-    <li>Expose students to emerging technologies and industry trends.</li>
-  </ul>
+
+<h2 class="section-title">
+<span class="num">01</span>
+About the Event
+</h2>
+
+<p>
+<strong>TECHVERSE 2026</strong> is a one-day technology and innovation competition organized by the Department of Computer and Information Science.
+</p>
+
+<p class="muted">
+The event provides students with opportunities to develop technical skills, explore Generative AI, demonstrate practical projects, express creativity, improve communication skills, and learn about current technology trends.
+</p>
+
+<div class="highlight">
+<strong>EXPLORE</strong> → TechNova + TechTalkX
+&nbsp; | &nbsp;
+<strong>CREATE</strong> → PromptX + AI CineVerse
+&nbsp; | &nbsp;
+<strong>INNOVATE</strong> → ProjectX Live
+</div>
+
 </section>
+
 
 <section>
-  <h2 class="section-title"><span class="num">03</span> Competition Categories</h2>
-  <div class="grid">
-    <div class="competition"><h3>01. TechNova</h3><span class="tagline">Technical Challenge</span></div>
-    <div class="competition"><h3>02. PromptX</h3><span class="tagline">Prompt Engineering</span></div>
-    <div class="competition"><h3>03. ProjectX Live</h3><span class="tagline">Live Project Competition</span></div>
-    <div class="competition"><h3>04. AI CineVerse</h3><span class="tagline">AI Short Film</span></div>
-    <div class="competition"><h3>05. TechTalkX</h3><span class="tagline">Best Performance</span></div>
-  </div>
+
+<h2 class="section-title">
+<span class="num">02</span>
+Objectives
+</h2>
+
+<ul>
+
+<li>Encourage practical and hands-on technology learning.</li>
+
+<li>Improve programming, debugging, and logical thinking skills.</li>
+
+<li>Introduce students to Generative AI and Prompt Engineering.</li>
+
+<li>Encourage creativity through AI-based media production.</li>
+
+<li>Provide a platform to demonstrate working projects.</li>
+
+<li>Develop communication and technical presentation skills.</li>
+
+<li>Encourage innovation and problem-solving.</li>
+
+<li>Expose students to emerging technologies and industry trends.</li>
+
+</ul>
+
 </section>
+
 
 <section>
-  <h2 class="section-title"><span class="num">04</span> Competition Details</h2>
 
-  <div class="card">
-    <h3>4.1 TechNova — <span class="tagline">Prove Your Core.</span></h3>
-    <p>Technical competition testing programming knowledge, logical thinking, debugging and computer science fundamentals.</p>
-    <h3>Round 1 — TechQuiz <span class="tagline">50 Marks</span></h3>
-    <ul><li>40 questions</li><li>Each correct answer = 1 mark</li><li>Correct answers = 40 marks</li><li>Speed = 10 marks</li></ul>
-    <table><tr><th>Speed Position</th><th>Marks</th></tr>
-      <tr><td>1st</td><td>10</td></tr><tr><td>2nd</td><td>8</td></tr><tr><td>3rd</td><td>6</td></tr><tr><td>4th</td><td>4</td></tr><tr><td>5th</td><td>2</td></tr><tr><td>Others</td><td>0</td></tr>
-    </table>
-    <div class="highlight"><strong>Example:</strong> 32 correct answers + 2nd fastest (8 speed marks) = <strong>40/50</strong>.</div>
-    <p><strong>Tie-break:</strong> If participants have the same score, faster completion time will be considered.</p>
-    <h3>Round 2 — DebugX <span class="tagline">50 Marks</span></h3>
-    <p>Participants identify and correct errors in programming problems.</p>
-    <table><tr><th>Criteria</th><th>Marks</th></tr>
-      <tr><td>Error Identification</td><td>15</td></tr><tr><td>Logical Understanding</td><td>15</td></tr><tr><td>Correct Fix</td><td>15</td></tr><tr><td>Speed</td><td>5</td></tr><tr class="total"><td>Total</td><td>50</td></tr>
-    </table>
-    <div class="highlight"><strong>TechNova Total: 100 Marks</strong></div>
-  </div>
+<h2 class="section-title">
+<span class="num">03</span>
+Competition Categories
+</h2>
 
-  <div class="card">
-    <h3>4.2 PromptX — <span class="tagline">Command the AI.</span></h3>
-    <p>Competition focused on Generative AI, prompt design and creative problem-solving.</p>
-    <h3>Round 1 — Prompt Battle <span class="tagline">30 Marks</span></h3>
-    <p><strong>Example:</strong> Create a prompt that makes AI explain cybersecurity to a beginner using simple language and real-world examples.</p>
-    <table><tr><th>Criteria</th><th>Marks</th></tr>
-      <tr><td>Prompt Quality</td><td>10</td></tr><tr><td>Accuracy</td><td>10</td></tr><tr><td>Creativity</td><td>10</td></tr><tr class="total"><td>Total</td><td>30</td></tr>
-    </table>
-    <h3>Round 2 — Prompt-to-Product <span class="tagline">40 Marks</span></h3>
-    <p><strong>Example:</strong> Create an AI Study Assistant using Generative AI.</p>
-    <table><tr><th>Criteria</th><th>Marks</th></tr>
-      <tr><td>Prompt Design</td><td>10</td></tr><tr><td>Functionality</td><td>10</td></tr><tr><td>Creativity</td><td>10</td></tr><tr><td>Usefulness</td><td>10</td></tr><tr class="total"><td>Total</td><td>40</td></tr>
-    </table>
-    <h3>Round 3 — Prompt Defence <span class="tagline">30 Marks</span></h3>
-    <p>Participants explain and defend their prompting approach. Judges may ask why an instruction was used, how output was improved, and how the prompt could be improved live.</p>
-    <table><tr><th>Criteria</th><th>Marks</th></tr>
-      <tr><td>Understanding</td><td>10</td></tr><tr><td>Explanation</td><td>10</td></tr><tr><td>Q&amp;A</td><td>10</td></tr><tr class="total"><td>Total</td><td>30</td></tr>
-    </table>
-    <div class="highlight"><strong>PromptX Total: 100 Marks</strong></div>
-  </div>
+<div class="grid">
 
-  <div class="card">
-    <h3>4.3 ProjectX Live — <span class="tagline">Don't Pitch It. Show It.</span></h3>
-    <p>A live project competition where participants demonstrate working projects to judges.</p>
-    <p><strong>Project Areas:</strong> AI • Web • Mobile • Cybersecurity • IoT • Data Analytics</p>
-    <p><strong>Example:</strong> Smart Queue Management System — Digital Token → Queue → Live Position → Notification → Service.</p>
-    <table><tr><th>Criteria</th><th>Marks</th></tr>
-      <tr><td>Innovation</td><td>20</td></tr><tr><td>Functionality</td><td>25</td></tr><tr><td>Implementation</td><td>20</td></tr><tr><td>Presentation</td><td>15</td></tr><tr><td>Project Defence</td><td>20</td></tr><tr class="total"><td>Total</td><td>100</td></tr>
-    </table>
-    <h3>Project Defence — Example Questions</h3>
-    <ul><li>Why did you choose this technology?</li><li>How does your system work?</li><li>What database did you use?</li><li>How did you handle security?</li><li>What happens when many users access the system?</li><li>What was your biggest technical challenge?</li></ul>
-  </div>
+<div class="competition">
+<h3>01. TechNova</h3>
+<span class="tagline">Technical Challenge</span>
+</div>
 
-  <div class="card">
-    <h3>4.4 AI CineVerse — <span class="tagline">Direct the Future.</span></h3>
-    <p>A creative competition combining Artificial Intelligence and filmmaking.</p>
-    <p><strong>Sub-Events:</strong> AI Short Film • AI Storytelling Challenge</p>
-    <p><strong>Suggested Themes:</strong> The World in 2050 • AI vs Humanity • A Day Without Technology • Future of Education</p>
-    <div class="highlight"><strong>Example:</strong> Theme — “A Day Without Technology”. Create a short film showing how people experience a day without modern technology.</div>
-    <table><tr><th>Criteria</th><th>Marks</th></tr>
-      <tr><td>Story</td><td>20</td></tr><tr><td>Creativity</td><td>25</td></tr><tr><td>AI Usage</td><td>20</td></tr><tr><td>Visual Quality</td><td>20</td></tr><tr><td>Editing</td><td>15</td></tr><tr class="total"><td>Total</td><td>100</td></tr>
-    </table>
-  </div>
+<div class="competition">
+<h3>02. PromptX</h3>
+<span class="tagline">Prompt Engineering</span>
+</div>
 
-  <div class="card">
-    <h3>4.5 TechTalkX — <span class="tagline">Explain. Inspire. Innovate.</span></h3>
-    <p>A technical presentation competition focused on <strong>Best Performance</strong>.</p>
-    <div class="flow"><span>Topic</span><span>Preparation</span><span>Technical Talk</span><span>Tech Defence &amp; Q&amp;A</span><span>Best Performance</span></div>
-    <p><strong>Example Topic:</strong> How Will Generative AI Change Software Development?</p>
-    <h3>Tech Defence — Example Questions</h3>
-    <ul><li>What is Generative AI?</li><li>What are the limitations of AI-generated code?</li><li>What security risks can occur when using AI-generated code?</li><li>How can developers verify AI-generated code?</li></ul>
-    <div class="highlight"><strong>No numerical marks will be used.</strong> Judges will select the Best Performer based on technical understanding, explanation, confidence, communication, audience engagement, handling of questions and overall stage performance.</div>
-    <p><strong>Award:</strong> Best Performer – TechTalkX</p>
-  </div>
+<div class="competition">
+<h3>03. ProjectX Live</h3>
+<span class="tagline">Live Project Competition</span>
+</div>
+
+<div class="competition">
+<h3>04. AI CineVerse</h3>
+<span class="tagline">AI Short Film</span>
+</div>
+
+<div class="competition">
+<h3>05. TechTalkX</h3>
+<span class="tagline">Best Performance</span>
+</div>
+
+</div>
+
 </section>
+
 
 <section>
-  <h2 class="section-title"><span class="num">05</span> One-Day Event Schedule</h2>
-  <table class="schedule">
-    <tr><th>Time</th><th>Activity</th></tr>
-    <tr><td>9:00 – 9:30 AM</td><td>Inauguration</td></tr>
-    <tr><td>9:30 – 10:30 AM</td><td>TechNova – TechQuiz</td></tr>
-    <tr><td>10:30 – 10:45 AM</td><td>Snack Break – 1</td></tr>
-    <tr><td>10:45 – 11:45 AM</td><td>TechNova – DebugX</td></tr>
-    <tr><td>11:45 AM – 12:45 PM</td><td>PromptX – Prompt Battle</td></tr>
-    <tr><td>12:45 – 1:30 PM</td><td>Lunch Break</td></tr>
-    <tr><td>1:30 – 2:30 PM</td><td>PromptX – Prompt-to-Product &amp; Defence</td></tr>
-    <tr><td>2:30 – 3:00 PM</td><td>ProjectX Live – Project Showcase &amp; Defence</td></tr>
-    <tr><td>3:00 – 3:15 PM</td><td>Snack Break – 2</td></tr>
-    <tr><td>3:15 – 3:45 PM</td><td>AI CineVerse – AI Short Film Screening</td></tr>
-    <tr><td>3:45 – 4:10 PM</td><td>TechTalkX – Technical Talk &amp; Best Performance</td></tr>
-    <tr><td>4:10 – 4:20 PM</td><td>Valedictory &amp; Prize Distribution</td></tr>
-    <tr><td>4:20 – 4:30 PM</td><td>Feedback &amp; Group Photo</td></tr>
-  </table>
+
+<h2 class="section-title">
+<span class="num">04</span>
+Competition Details
+</h2>
+
+
+<div class="card">
+
+<h3>
+4.1 TechNova —
+<span class="tagline">Prove Your Core.</span>
+</h3>
+
+<p>
+Technical competition testing programming knowledge, logical thinking, debugging and computer science fundamentals.
+</p>
+
+<h3>
+Round 1 — TechQuiz
+<span class="tagline">50 Marks</span>
+</h3>
+
+<ul>
+<li>40 questions</li>
+<li>Each correct answer = 1 mark</li>
+<li>Correct answers = 40 marks</li>
+<li>Speed = 10 marks</li>
+</ul>
+
+<table>
+
+<tr>
+<th>Speed Position</th>
+<th>Marks</th>
+</tr>
+
+<tr><td>1st</td><td>10</td></tr>
+<tr><td>2nd</td><td>8</td></tr>
+<tr><td>3rd</td><td>6</td></tr>
+<tr><td>4th</td><td>4</td></tr>
+<tr><td>5th</td><td>2</td></tr>
+<tr><td>Others</td><td>0</td></tr>
+
+</table>
+
+<div class="highlight">
+<strong>Example:</strong>
+32 correct answers + 2nd fastest (8 speed marks)
+= <strong>40/50</strong>.
+</div>
+
+<p>
+<strong>Tie-break:</strong>
+If participants have the same score, faster completion time will be considered.
+</p>
+
+
+<h3>
+Round 2 — DebugX
+<span class="tagline">50 Marks</span>
+</h3>
+
+<p>
+Participants identify and correct errors in programming problems.
+</p>
+
+<table>
+
+<tr>
+<th>Criteria</th>
+<th>Marks</th>
+</tr>
+
+<tr>
+<td>Error Identification</td>
+<td>15</td>
+</tr>
+
+<tr>
+<td>Logical Understanding</td>
+<td>15</td>
+</tr>
+
+<tr>
+<td>Correct Fix</td>
+<td>15</td>
+</tr>
+
+<tr>
+<td>Speed</td>
+<td>5</td>
+</tr>
+
+<tr class="total">
+<td>Total</td>
+<td>50</td>
+</tr>
+
+</table>
+
+<div class="highlight">
+<strong>TechNova Total: 100 Marks</strong>
+</div>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+4.2 PromptX —
+<span class="tagline">Command the AI.</span>
+</h3>
+
+<p>
+Competition focused on Generative AI, prompt design and creative problem-solving.
+</p>
+
+<h3>
+Round 1 — Prompt Battle
+<span class="tagline">30 Marks</span>
+</h3>
+
+<p>
+<strong>Example:</strong>
+Create a prompt that makes AI explain cybersecurity to a beginner using simple language and real-world examples.
+</p>
+
+<table>
+
+<tr>
+<th>Criteria</th>
+<th>Marks</th>
+</tr>
+
+<tr><td>Prompt Quality</td><td>10</td></tr>
+<tr><td>Accuracy</td><td>10</td></tr>
+<tr><td>Creativity</td><td>10</td></tr>
+
+<tr class="total">
+<td>Total</td>
+<td>30</td>
+</tr>
+
+</table>
+
+
+<h3>
+Round 2 — Prompt-to-Product
+<span class="tagline">40 Marks</span>
+</h3>
+
+<p>
+<strong>Example:</strong>
+Create an AI Study Assistant using Generative AI.
+</p>
+
+<table>
+
+<tr>
+<th>Criteria</th>
+<th>Marks</th>
+</tr>
+
+<tr><td>Prompt Design</td><td>10</td></tr>
+<tr><td>Functionality</td><td>10</td></tr>
+<tr><td>Creativity</td><td>10</td></tr>
+<tr><td>Usefulness</td><td>10</td></tr>
+
+<tr class="total">
+<td>Total</td>
+<td>40</td>
+</tr>
+
+</table>
+
+
+<h3>
+Round 3 — Prompt Defence
+<span class="tagline">30 Marks</span>
+</h3>
+
+<p>
+Participants explain and defend their prompting approach. Judges may ask why an instruction was used, how output was improved, and how the prompt could be improved live.
+</p>
+
+<table>
+
+<tr>
+<th>Criteria</th>
+<th>Marks</th>
+</tr>
+
+<tr><td>Understanding</td><td>10</td></tr>
+<tr><td>Explanation</td><td>10</td></tr>
+<tr><td>Q&amp;A</td><td>10</td></tr>
+
+<tr class="total">
+<td>Total</td>
+<td>30</td>
+</tr>
+
+</table>
+
+<div class="highlight">
+<strong>PromptX Total: 100 Marks</strong>
+</div>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+4.3 ProjectX Live —
+<span class="tagline">Don't Pitch It. Show It.</span>
+</h3>
+
+<p>
+A live project competition where participants demonstrate working projects to judges.
+</p>
+
+<p>
+<strong>Project Areas:</strong>
+AI • Web • Mobile • Cybersecurity • IoT • Data Analytics
+</p>
+
+<p>
+<strong>Example:</strong>
+Smart Queue Management System —
+Digital Token → Queue → Live Position → Notification → Service.
+</p>
+
+<table>
+
+<tr>
+<th>Criteria</th>
+<th>Marks</th>
+</tr>
+
+<tr><td>Innovation</td><td>20</td></tr>
+<tr><td>Functionality</td><td>25</td></tr>
+<tr><td>Implementation</td><td>20</td></tr>
+<tr><td>Presentation</td><td>15</td></tr>
+<tr><td>Project Defence</td><td>20</td></tr>
+
+<tr class="total">
+<td>Total</td>
+<td>100</td>
+</tr>
+
+</table>
+
+<h3>Project Defence — Example Questions</h3>
+
+<ul>
+<li>Why did you choose this technology?</li>
+<li>How does your system work?</li>
+<li>What database did you use?</li>
+<li>How did you handle security?</li>
+<li>What happens when many users access the system?</li>
+<li>What was your biggest technical challenge?</li>
+</ul>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+4.4 AI CineVerse —
+<span class="tagline">Direct the Future.</span>
+</h3>
+
+<p>
+A creative competition combining Artificial Intelligence and filmmaking.
+</p>
+
+<p>
+<strong>Sub-Events:</strong>
+AI Short Film • AI Storytelling Challenge
+</p>
+
+<p>
+<strong>Suggested Themes:</strong>
+The World in 2050 • AI vs Humanity • A Day Without Technology • Future of Education
+</p>
+
+<div class="highlight">
+<strong>Example:</strong>
+Theme — “A Day Without Technology”.
+Create a short film showing how people experience a day without modern technology.
+</div>
+
+<table>
+
+<tr>
+<th>Criteria</th>
+<th>Marks</th>
+</tr>
+
+<tr><td>Story</td><td>20</td></tr>
+<tr><td>Creativity</td><td>25</td></tr>
+<tr><td>AI Usage</td><td>20</td></tr>
+<tr><td>Visual Quality</td><td>20</td></tr>
+<tr><td>Editing</td><td>15</td></tr>
+
+<tr class="total">
+<td>Total</td>
+<td>100</td>
+</tr>
+
+</table>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+4.5 TechTalkX —
+<span class="tagline">Explain. Inspire. Innovate.</span>
+</h3>
+
+<p>
+A technical presentation competition focused on <strong>Best Performance</strong>.
+</p>
+
+<div class="flow">
+<span>Topic</span>
+<span>Preparation</span>
+<span>Technical Talk</span>
+<span>Tech Defence &amp; Q&amp;A</span>
+<span>Best Performance</span>
+</div>
+
+<p>
+<strong>Example Topic:</strong>
+How Will Generative AI Change Software Development?
+</p>
+
+<h3>Tech Defence — Example Questions</h3>
+
+<ul>
+<li>What is Generative AI?</li>
+<li>What are the limitations of AI-generated code?</li>
+<li>What security risks can occur when using AI-generated code?</li>
+<li>How can developers verify AI-generated code?</li>
+</ul>
+
+<div class="highlight">
+<strong>No numerical marks will be used.</strong>
+Judges will select the Best Performer based on technical understanding, explanation, confidence, communication, audience engagement, handling of questions and overall stage performance.
+</div>
+
+<p>
+<strong>Award:</strong>
+Best Performer – TechTalkX
+</p>
+
+</div>
+
 </section>
 
-<section>
-  <h2 class="section-title"><span class="num">06</span> Participant Requirements</h2>
-  <ul>
-    <li>College ID card</li>
-    <li>Mobile phone</li>
-    <li>Laptop and charger</li>
-    <li>Wi-Fi / Internet connection</li>
-    <li>Required software or AI tools</li>
-  </ul>
-</section>
 
 <section>
-  <h2 class="section-title"><span class="num">07</span> General Rules</h2>
-  <ol class="rules">
-    <li>The event is an in-campus competition for students of the Department of Computer and Information Science.</li>
-    <li>Participants must complete registration 2 days before the event.</li>
-    <li>Participants must follow the rules of each individual competition.</li>
-    <li>Participants must report before the scheduled activity.</li>
-    <li>Unauthorized assistance or unfair practices may result in disqualification.</li>
-    <li>Projects and creative submissions must be the participants' own work.</li>
-    <li>AI tools may be used only where permitted by the respective competition rules.</li>
-    <li>Participants must maintain discipline and follow departmental instructions.</li>
-    <li>Judges' decisions will be final.</li>
-    <li><strong>The rules and instructions announced by the organizing committee for each competition are final and must be followed by all participants.</strong></li>
-  </ol>
+
+<h2 class="section-title">
+<span class="num">05</span>
+One-Day Event Schedule
+</h2>
+
+<table class="schedule">
+
+<tr>
+<th>Time</th>
+<th>Activity</th>
+</tr>
+
+<tr>
+<td>9:00 – 9:30 AM</td>
+<td>Inauguration</td>
+</tr>
+
+<tr>
+<td>9:30 – 10:30 AM</td>
+<td>TechNova – TechQuiz</td>
+</tr>
+
+<tr>
+<td>10:30 – 10:45 AM</td>
+<td>Snack Break – 1</td>
+</tr>
+
+<tr>
+<td>10:45 – 11:45 AM</td>
+<td>TechNova – DebugX</td>
+</tr>
+
+<tr>
+<td>11:45 AM – 12:45 PM</td>
+<td>PromptX – Prompt Battle</td>
+</tr>
+
+<tr>
+<td>12:45 – 1:30 PM</td>
+<td>Lunch Break</td>
+</tr>
+
+<tr>
+<td>1:30 – 2:30 PM</td>
+<td>PromptX – Prompt-to-Product &amp; Defence</td>
+</tr>
+
+<tr>
+<td>2:30 – 3:00 PM</td>
+<td>ProjectX Live – Project Showcase &amp; Defence</td>
+</tr>
+
+<tr>
+<td>3:00 – 3:15 PM</td>
+<td>Snack Break – 2</td>
+</tr>
+
+<tr>
+<td>3:15 – 3:45 PM</td>
+<td>AI CineVerse – AI Short Film Screening</td>
+</tr>
+
+<tr>
+<td>3:45 – 4:10 PM</td>
+<td>TechTalkX – Technical Talk &amp; Best Performance</td>
+</tr>
+
+<tr>
+<td>4:10 – 4:20 PM</td>
+<td>Valedictory &amp; Prize Distribution</td>
+</tr>
+
+<tr>
+<td>4:20 – 4:30 PM</td>
+<td>Feedback &amp; Group Photo</td>
+</tr>
+
+</table>
+
 </section>
 
-<section>
-  <h2 class="section-title"><span class="num">08</span> Full Mark Structure</h2>
-  <table>
-    <tr><th>Competition</th><th>Round / Criteria</th><th>Marks</th></tr>
-    <tr><td rowspan="3"><strong>TechNova</strong></td><td>TechQuiz</td><td>50</td></tr>
-    <tr><td>DebugX</td><td>50</td></tr><tr class="total"><td>Total</td><td>100</td></tr>
-    <tr><td rowspan="4"><strong>PromptX</strong></td><td>Prompt Battle</td><td>30</td></tr>
-    <tr><td>Prompt-to-Product</td><td>40</td></tr><tr><td>Prompt Defence</td><td>30</td></tr><tr class="total"><td>Total</td><td>100</td></tr>
-    <tr><td rowspan="6"><strong>ProjectX Live</strong></td><td>Innovation</td><td>20</td></tr>
-    <tr><td>Functionality</td><td>25</td></tr><tr><td>Implementation</td><td>20</td></tr><tr><td>Presentation</td><td>15</td></tr><tr><td>Project Defence</td><td>20</td></tr><tr class="total"><td>Total</td><td>100</td></tr>
-    <tr><td rowspan="6"><strong>AI CineVerse</strong></td><td>Story</td><td>20</td></tr>
-    <tr><td>Creativity</td><td>25</td></tr><tr><td>AI Usage</td><td>20</td></tr><tr><td>Visual Quality</td><td>20</td></tr><tr><td>Editing</td><td>15</td></tr><tr class="total"><td>Total</td><td>100</td></tr>
-    <tr><td><strong>TechTalkX</strong></td><td>Best Performance</td><td><strong>No Numerical Marks</strong></td></tr>
-  </table>
-</section>
 
 <section>
-  <h2 class="section-title"><span class="num">09</span> Organizing Responsibilities</h2>
-  <div class="resp">
-    <div><strong>Faculty Team</strong>Overall supervision</div>
-    <div><strong>Event Secretary</strong>Event coordination and management</div>
-    <div><strong>Tech Team</strong>Technical support</div>
-    <div><strong>Support Team</strong>Guests, judges and refreshments</div>
-    <div><strong>Media Team</strong>Posters, photos and videos</div>
-    <div><strong>Volunteer Team</strong>Guidance, discipline and venue management</div>
-  </div>
+
+<h2 class="section-title">
+<span class="num">06</span>
+Participant Requirements
+</h2>
+
+<ul>
+<li>College ID card</li>
+<li>Mobile phone</li>
+<li>Laptop and charger</li>
+<li>Wi-Fi / Internet connection</li>
+<li>Required software or AI tools</li>
+</ul>
+
 </section>
 
+
 <section>
-  <h2 class="section-title"><span class="num">10</span> Event Secretary Team</h2>
-  <div class="resp">
-    <div><strong>Event Secretary</strong>Overall event coordination and management</div>
-    <div><strong>Associate Members</strong>Support the Event Secretary in planning and coordination</div>
-    <div><strong>Volunteers</strong>Participant guidance, discipline and event support</div>
-  </div>
+
+<h2 class="section-title">
+<span class="num">07</span>
+General Rules
+</h2>
+
+<ol class="rules">
+
+<li>
+The event is an in-campus competition for students of the Department of Computer and Information Science.
+</li>
+
+<li>
+Participants must complete registration 2 days before the event.
+</li>
+
+<li>
+Participants must follow the rules of each individual competition.
+</li>
+
+<li>
+Participants must report before the scheduled activity.
+</li>
+
+<li>
+Unauthorized assistance or unfair practices may result in disqualification.
+</li>
+
+<li>
+Projects and creative submissions must be the participants' own work.
+</li>
+
+<li>
+AI tools may be used only where permitted by the respective competition rules.
+</li>
+
+<li>
+Participants must maintain discipline and follow departmental instructions.
+</li>
+
+<li>
+Judges' decisions will be final.
+</li>
+
+<li>
+<strong>
+The rules and instructions announced by the organizing committee for each competition are final and must be followed by all participants.
+</strong>
+</li>
+
+</ol>
+
 </section>
+
+
+<section>
+
+<h2 class="section-title">
+<span class="num">08</span>
+Full Mark Structure
+</h2>
+
+<table>
+
+<tr>
+<th>Competition</th>
+<th>Round / Criteria</th>
+<th>Marks</th>
+</tr>
+
+<tr>
+<td rowspan="3"><strong>TechNova</strong></td>
+<td>TechQuiz</td>
+<td>50</td>
+</tr>
+
+<tr>
+<td>DebugX</td>
+<td>50</td>
+</tr>
+
+<tr class="total">
+<td>Total</td>
+<td>100</td>
+</tr>
+
+
+<tr>
+<td rowspan="4"><strong>PromptX</strong></td>
+<td>Prompt Battle</td>
+<td>30</td>
+</tr>
+
+<tr>
+<td>Prompt-to-Product</td>
+<td>40</td>
+</tr>
+
+<tr>
+<td>Prompt Defence</td>
+<td>30</td>
+</tr>
+
+<tr class="total">
+<td>Total</td>
+<td>100</td>
+</tr>
+
+
+<tr>
+<td rowspan="6"><strong>ProjectX Live</strong></td>
+<td>Innovation</td>
+<td>20</td>
+</tr>
+
+<tr>
+<td>Functionality</td>
+<td>25</td>
+</tr>
+
+<tr>
+<td>Implementation</td>
+<td>20</td>
+</tr>
+
+<tr>
+<td>Presentation</td>
+<td>15</td>
+</tr>
+
+<tr>
+<td>Project Defence</td>
+<td>20</td>
+</tr>
+
+<tr class="total">
+<td>Total</td>
+<td>100</td>
+</tr>
+
+
+<tr>
+<td rowspan="6"><strong>AI CineVerse</strong></td>
+<td>Story</td>
+<td>20</td>
+</tr>
+
+<tr>
+<td>Creativity</td>
+<td>25</td>
+</tr>
+
+<tr>
+<td>AI Usage</td>
+<td>20</td>
+</tr>
+
+<tr>
+<td>Visual Quality</td>
+<td>20</td>
+</tr>
+
+<tr>
+<td>Editing</td>
+<td>15</td>
+</tr>
+
+<tr class="total">
+<td>Total</td>
+<td>100</td>
+</tr>
+
+
+<tr>
+<td><strong>TechTalkX</strong></td>
+<td>Best Performance</td>
+<td><strong>No Numerical Marks</strong></td>
+</tr>
+
+</table>
+
+</section>
+
+
+<section>
+
+<h2 class="section-title">
+<span class="num">09</span>
+Organizing Responsibilities
+</h2>
+
+<div class="resp">
+
+<div>
+<strong>Faculty Team</strong>
+Overall supervision
+</div>
+
+<div>
+<strong>Event Secretary</strong>
+Event coordination and management
+</div>
+
+<div>
+<strong>Tech Team</strong>
+Technical support
+</div>
+
+<div>
+<strong>Support Team</strong>
+Guests, judges and refreshments
+</div>
+
+<div>
+<strong>Media Team</strong>
+Posters, photos and videos
+</div>
+
+<div>
+<strong>Volunteer Team</strong>
+Guidance, discipline and venue management
+</div>
+
+</div>
+
+</section>
+
+
+<section>
+
+<h2 class="section-title">
+<span class="num">10</span>
+Estimated Budget
+</h2>
+
+<table>
+
+<tr>
+<th>S.No.</th>
+<th>Expense</th>
+<th>Estimated Amount</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td>Prizes &amp; Trophies 500 x 5</td>
+<td>₹2,500</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>Certificates  50 X 30 </td>
+<td>₹5,000</td>
+</tr>
+
+<tr>
+<td>3</td>
+<td>Refreshments 130 X 60 </td>
+<td>₹7,200</td>
+</tr>
+
+<tr class="total">
+<td colspan="2">Total Estimated Budget</td>
+<td>₹14,700</td>
+</tr>
+
+</table>
+
+<p class="muted">
+<strong>Note:</strong>
+The above amounts are estimated and may be adjusted according to actual requirements and departmental approval.
+</p>
+
+</section>
+
+
+<section>
+
+<h2 class="section-title">
+<span class="num">11</span>
+Event Secretary Team
+</h2>
+
+<div class="resp">
+
+<div>
+<strong>Event Secretary</strong>
+Overall event coordination and management
+</div>
+
+<div>
+<strong>Associate Members</strong>
+Support the Event Secretary in planning and coordination
+</div>
+
+<div>
+<strong>Volunteers</strong>
+Participant guidance, discipline and event support
+</div>
+
+</div>
+
+</section>
+
 
 <div class="footer">
-  <strong>TECHVERSE 2026</strong> &nbsp;•&nbsp; EXPLORE • CREATE • INNOVATE
+
+<strong>TECHVERSE 2026</strong>
+&nbsp;•&nbsp;
+EXPLORE • CREATE • INNOVATE
+
 </div>
 
 </div>
+
 </body>
 </html>
-```
